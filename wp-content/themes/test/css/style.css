@@ -1,0 +1,87 @@
+/* 
+    xs - komórki
+    sm - komórki w poziomie
+    md - tablety w poziomie
+    xl - laptopy
+    lg - komputery
+*/
+body{
+    background-color: rgb(231, 215, 198);
+}
+*{
+        margin:0;
+        box-sizing: border-box;
+}
+
+html
+{
+    font-size:20px;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+}
+.aktualnosci{
+    width: 75%;
+}
+    .aktualnosci-container
+    {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+        .aktualnosci-item
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 350px;
+            height: 500px;
+            padding:30px;
+            margin:20px;
+            border-width: 3px;
+            border-style:solid;
+            background-color:peachpuff;
+            overflow: hidden;
+        }
+
+.aktualnosci-container img{
+    width: calc(100% + 60px);
+    margin: -30px;
+    margin-bottom:10px;
+}
+
+.archive-link
+{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    flex-grow: 4;
+}
+
+a:hover{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.ogloszenia{
+    width: 20%;
+}
+    .ogloszenia-container{
+        display:flex;
+        flex-direction: column;
+    }
+        .ogloszenia-item
+        {
+            margin: 20px 0px;
+        }
+h1,h2{
+    text-align: center;
+}
+h1{
+    margin-bottom:50px;
+}
